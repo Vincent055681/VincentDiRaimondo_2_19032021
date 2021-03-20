@@ -154,25 +154,25 @@ main {
 }
 
 .research-bar::-webkit-input-placeholder {
-  color: #bebebe;
+  color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
 .research-bar:-ms-input-placeholder {
-  color: #bebebe;
+  color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
 .research-bar::-ms-input-placeholder {
-  color: #bebebe;
+  color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
 .research-bar::placeholder {
-  color: #bebebe;
+  color: black;
   font-size: 16px;
   font-weight: 600;
 }
@@ -320,6 +320,7 @@ main {
 }
 
 .marseille-case {
+  background: white;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,7 +547,12 @@ main {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
       grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-      grid-template-areas: "activity-1 activity-2 activity-4 activity-5" "activity-1 activity-2 activity-4 activity-5" "activity-1 activity-2 activity-4 activity-6" "activity-1 activity-2 activity-4 activity-6" "activity-1 activity-3 activity-4 activity-6" "activity-1 activity-3 activity-4 activity-6";
+      grid-template-areas: "activity-1 activity-2 activity-4 activity-5"
+ "activity-1 activity-2 activity-4 activity-5"
+ "activity-1 activity-2 activity-4 activity-6"
+ "activity-1 activity-2 activity-4 activity-6"
+ "activity-1 activity-3 activity-4 activity-6"
+ "activity-1 activity-3 activity-4 activity-6";
   grid-gap: 30px;
 }
 
@@ -702,7 +708,8 @@ main {
     -ms-grid-rows: 0.5fr 1fr;
         grid-template-rows: 0.5fr 1fr;
     row-gap: 30px;
-        grid-template-areas: "bloc-most-popular" "bloc-accomodation";
+        grid-template-areas: "bloc-most-popular"
+ "bloc-accomodation";
   }
   .blocs .bloc-accomodation {
     -ms-grid-row: 2;
@@ -772,7 +779,8 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "activity-1 activity-2 activity-4" "activity-5 activity-3 activity-6";
+        grid-template-areas: "activity-1 activity-2 activity-4"
+ "activity-5 activity-3 activity-6";
   }
   #activity-1 {
     -ms-grid-row: 1;
@@ -855,7 +863,9 @@ main {
         grid-template-columns: 10fr 10fr;
     -ms-grid-rows: 10fr 10fr 10fr;
         grid-template-rows: 10fr 10fr 10fr;
-        grid-template-areas: "activity-1 activity-2" "activity-4 activity-3" "activity-5 activity-6";
+        grid-template-areas: "activity-1 activity-2"
+ "activity-4 activity-3"
+ "activity-5 activity-6";
   }
 }
 
@@ -881,7 +891,8 @@ main {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo navbar-link-sign-up" "navbar-link-accomodation navbar-link-activities";
+        grid-template-areas: "logo navbar-link-sign-up"
+ "navbar-link-accomodation navbar-link-activities";
   }
   .navbar img {
     -ms-grid-row: 1;
@@ -936,7 +947,12 @@ main {
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "activity-1" "activity-2" "activity-3" "activity-4" "activity-5" "activity-6";
+        grid-template-areas: "activity-1"
+ "activity-2"
+ "activity-3"
+ "activity-4"
+ "activity-5"
+ "activity-6";
     height: 1500px;
   }
   .footer-blocs {
@@ -957,5 +973,22 @@ main {
   .research-bar {
     width: 100%;
   }
+  .bloc {
+    border-radius: 0;
+  }
+
+  .bloc-accomodation {
+    background: white;
+    margin-left: -15px;
+  }
+
+  .bloc-most-popular {
+    margin-left: -12px;
+    padding-right: 24px;
+    width: 100%;
+  }
+
+  .push-to-right {
+    margin-left: 0 !important;
+  }
 }
-/*# sourceMappingURL=style.css.map */
