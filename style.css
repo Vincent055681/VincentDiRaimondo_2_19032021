@@ -268,29 +268,15 @@ main {
   border-radius: 20px 20px 0 0;
 }
 
-.marseille-case #room1 {
-  background-image: url("src/img/hotels/room1.jpg");
+.marseille-case img {
+  width: 100%;
+  height: 100px;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 
-.marseille-case #room2 {
-  background-image: url("src/img/hotels/room2.jpg");
-}
 
-.marseille-case #room3 {
-  background-image: url("src/img/hotels/room3.jpg");
-}
-
-.marseille-case #room4 {
-  background-image: url("src/img/hotels/room4.jpg");
-}
-
-.marseille-case #room5 {
-  background-image: url("src/img/hotels/room5.jpg");
-}
-
-.marseille-case #room6 {
-  background-image: url("src/img/hotels/room6.jpg");
-}
 
 .marseille-case .case-text {
   margin: 5px;
@@ -345,20 +331,20 @@ main {
 .most-popular-case-img {
   width: 40%;
   height: 100%;
-  background-size: cover;
   border-radius: 20px 0 0 15px;
+  background-size: cover;
 }
 
 .most-popular #most-popular-img1 {
-  background-image: url("src/img/hotels/popular_room1.jpg");
+  background-image: url("src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 .most-popular #most-popular-img2 {
-  background-image: url("src/img/hotels/popular_room2.jpg");
+  background-image: url("src/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
 .most-popular #most-popular-img3 {
-  background-image: url("src/img/hotels/popular_room3.jpg");
+  background-image: url("src/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 .most-popular .case-text {
@@ -465,37 +451,38 @@ main {
 }
 
 #activity-1 {
-  background-image: url("src/img/activities/activity_1.jpg");
+  background-image: url("src/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   background-size: cover;
   grid-area: activity-1;
 }
 
 #activity-2 {
-  background-image: url("src/img/activities/activity_2.jpg");
+  object-fit:cover ;
+  background-image: url("src/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   background-size: cover;
   grid-area: activity-2;
 }
 
 #activity-3 {
-  background-image: url("src/img/activities/activity_3.jpg");
+  background-image: url("src/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
   background-size: cover;
   grid-area: activity-3;
 }
 
 #activity-4 {
-  background-image: url("src/img/activities/activity_4.jpg");
+  background-image: url("src/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   background-size: cover;
   grid-area: activity-4;
 }
 
 #activity-5 {
-  background-image: url("src/img/activities/activity_5.jpg");
+  background-image: url("src/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   background-size: cover;
   grid-area: activity-5;
 }
 
 #activity-6 {
-  background-image: url("src/img/activities/activity_6.jpg");
+  background-image: url("src/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   background-size: cover;
   grid-area: activity-6;
 }
