@@ -25,6 +25,7 @@ main {
   flex-direction: column;
 }
 
+
 .navbar .navbar-link .underline-effect {
   width: 100%;
   height: 3px;
@@ -37,6 +38,10 @@ main {
 
 .navbar #navbar-link-activities:hover > .underline-effect {
   background: #0065fc;
+}
+
+#navbar-link-sign-up a {
+  color: #0065fc;
 }
 
 .navbar a {
@@ -60,6 +65,14 @@ main {
 .navbar #navbar-link-activities {
   grid-area: activities;
   color: black;
+}
+
+.navbar #navbar-link-activities a {
+  color: black;
+}
+
+.navbar #navbar-link-activities a:hover {
+  color: #0065fc;
 }
 
 .navbar #navbar-link-sign-up {
