@@ -69,7 +69,10 @@ main {
 
 .navbar #navbar-link-accomodation {
   grid-area: accomodation;
-  color: #0065fc ;
+}
+
+#navbar-link-accomodation a {
+  color: #0065fc;
 }
 
 .navbar #navbar-link-activities {
