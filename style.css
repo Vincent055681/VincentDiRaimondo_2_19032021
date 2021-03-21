@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: initial;
+}
+
 main {
   width: 98%;
   max-width: 1440px;
@@ -247,6 +252,7 @@ main {
   padding: 0 0 0 0;
 }
 
+
 .marseille-case {
   background: white;
   list-style: none;
@@ -452,7 +458,7 @@ main {
   width: 95%;
   background-color: white;
   border-radius: 0 0 20px 20px;
-  padding: 10px 0 10px 5%;
+  padding: 20px 0 20px 5%;
   margin: 0;
   bottom: 0;
 }
