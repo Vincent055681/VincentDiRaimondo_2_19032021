@@ -565,6 +565,11 @@ main {
     height: 200px;
     width: 95%;
   }
+
+  .most-populars a {
+    display: grid;
+  }
+
   .most-populars .title-h2-and-icon {
     display: flex;
     align-items: flex-start;
@@ -587,7 +592,7 @@ main {
     width: 30%;
     height: 100%;
     background-size: cover;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 15px;
   }
 
   .most-popular-case-img img {
