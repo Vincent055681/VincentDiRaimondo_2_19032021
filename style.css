@@ -428,47 +428,41 @@ main {
 
 
 .marseille-activities .activity__full-card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 100%;
   height: 100%;
-  background: red;
   border-radius: 20px;
-  box-shadow: 0 0 6px 0 #000 2e;
+  box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
 }
 
 .activity__full-card img {
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .marseille-activities .card__title {
-  background-color: pink;
+  position: absolute;
+  width: 95%;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 0 10px 5%;
+  margin: 0;
+  bottom: 0;
 }
 
-#t2 {
-  height: 50%;
+.englobe {
+  height: 100%;
+  margin: 0;
 }
-
-#t3 {
-  height: 50%;
-}
-
-#t5 {
-  height: 50%;
-}
-
-#t6 {
-}
-
 
 #activity-1 {
   grid-area: activity-1;
 }
 #activity-2 {
-  grid-area: activity-2;
+  grid-area: activity-2;  
 }
 #activity-3 {
   grid-area: activity-3;
@@ -500,6 +494,7 @@ main {
 
 .footer-blocs {
   display: flex;
+  display: none;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
@@ -535,8 +530,9 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
     row-gap: 30px;
-    grid-template-areas: "bloc-most-popular"
- "bloc-accomodation";
+    grid-template-areas: 
+    "bloc-most-popular"
+    "bloc-accomodation";
   }
   .blocs .bloc-accomodation {
     grid-area: bloc-accomodation;
@@ -588,7 +584,7 @@ main {
     min-width: 0;
   }
 
-  /* .marseille-activities {
+  .marseille-activities {
     display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -596,6 +592,12 @@ main {
   "activity-1 activity-2 activity-4"
   "activity-5 activity-3 activity-6";
   }
+
+  .activity__full-card {
+    max-height: 330px;
+    min-height: 330px;
+  }
+
   #activity-1 {
     grid-area: activity-1;
   }
@@ -613,7 +615,7 @@ main {
   }
   #activity-6 {
     grid-area: activity-6;
-  } */
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -646,7 +648,7 @@ main {
   .bloc-most-popular .most-populars .most-popular {
     height: 120px;
   }
-  /* .marseille-activities {
+  .marseille-activities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -654,7 +656,7 @@ main {
   "activity-1 activity-2"
   "activity-4 activity-3"
   "activity-5 activity-6";
-  } */
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -703,7 +705,7 @@ main {
   #icon-glass {
     display: block;
   }
-  /* .marseille-activities {
+  .marseille-activities {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -715,7 +717,7 @@ main {
     "activity-5"
     "activity-6";
     height: 1500px;
-  } */
+  }
   .footer-blocs {
     display: inline-flex;
     flex-direction: column;
