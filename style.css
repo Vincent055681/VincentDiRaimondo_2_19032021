@@ -18,6 +18,10 @@ main {
   grid-template-areas: "logo . accomodation activities sign-up";
 }
 
+#logo {
+  padding: 0;
+}
+
 .navbar .navbar-link {
   display: flex;
   justify-content: center;
@@ -424,10 +428,6 @@ main {
     "activity-1 activity-3 activity-4 activity-6"
     "activity-1 activity-3 activity-4 activity-6";
 }
-
-
-
-
 
 .marseille-activities .activity__full-card {
   position: relative;
