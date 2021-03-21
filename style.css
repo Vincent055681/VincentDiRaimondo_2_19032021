@@ -407,7 +407,87 @@ main {
   font-weight: bold;
 }
 
+.marseille-activities {
+  height: 550px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+  grid-gap: 30px;
+  grid-template-areas: 
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6";
+}
 
+
+
+
+
+.marseille-activities .activity__full-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 20px;
+  box-shadow: 0 0 6px 0 #000 2e;
+}
+
+.activity__full-card img {
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marseille-activities .card__title {
+  background-color: pink;
+}
+
+#t2 {
+  height: 50%;
+}
+
+#t3 {
+  height: 50%;
+}
+
+#t5 {
+  height: 50%;
+}
+
+#t6 {
+}
+
+
+#activity-1 {
+  grid-area: activity-1;
+}
+#activity-2 {
+  grid-area: activity-2;
+}
+#activity-3 {
+  grid-area: activity-3;
+}
+#activity-4 {
+  grid-area: activity-4;
+}
+#activity-5 {
+  grid-area: activity-5;
+}
+#activity-6 {
+  grid-area: activity-6;
+}
+
+.marseille-activities .activity__full-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
 
 /* Footer */
 .footer {
@@ -508,12 +588,13 @@ main {
     min-width: 0;
   }
 
-  .marseille-activities {
+  /* .marseille-activities {
     display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "activity-1 activity-2 activity-4"
- "activity-5 activity-3 activity-6";
+        grid-template-areas: 
+  "activity-1 activity-2 activity-4"
+  "activity-5 activity-3 activity-6";
   }
   #activity-1 {
     grid-area: activity-1;
@@ -532,7 +613,7 @@ main {
   }
   #activity-6 {
     grid-area: activity-6;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -565,15 +646,15 @@ main {
   .bloc-most-popular .most-populars .most-popular {
     height: 120px;
   }
-  .marseille-activities {
+  /* .marseille-activities {
     display: grid;
-    grid-template-columns: 10fr 10fr;
-    grid-template-rows: 10fr 10fr 10fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
   "activity-1 activity-2"
   "activity-4 activity-3"
   "activity-5 activity-6";
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -622,7 +703,7 @@ main {
   #icon-glass {
     display: block;
   }
-  .marseille-activities {
+  /* .marseille-activities {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -634,7 +715,7 @@ main {
     "activity-5"
     "activity-6";
     height: 1500px;
-  }
+  } */
   .footer-blocs {
     display: inline-flex;
     flex-direction: column;
