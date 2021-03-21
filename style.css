@@ -494,7 +494,6 @@ main {
 
 .footer-blocs {
   display: flex;
-  display: none;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
