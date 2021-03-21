@@ -138,7 +138,7 @@ main {
 }
 
 .research-bar::placeholder {
-  color: black;
+  color: rgb(170, 170, 170);
   font-size: 16px;
   font-weight: 600;
 }
