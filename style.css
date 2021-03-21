@@ -329,6 +329,8 @@ main {
 }
 
 .most-popular-case-img {
+  display: flex;
+  align-items: center;
   width: 40%;
   height: 100%;
   border-radius: 20px 0 0 15px;
