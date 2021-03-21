@@ -72,7 +72,7 @@ main {
 }
 
 #navbar-link-accomodation a {
-  color: #0065fc !important;
+  color: #0065fc;
 }
 
 .navbar #navbar-link-activities {
