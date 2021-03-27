@@ -635,6 +635,9 @@ main {
   #activity-6 {
     grid-area: activity-6;
   }
+  .most-popular-case-img img {
+    min-width: 80px;
+  }
 }
 
 
@@ -727,6 +730,9 @@ main {
   #icon-glass {
     display: block;
   }
+  .most-popular-case-img img {
+    min-width: 145px;
+  }
   .marseille-activities {
     display: grid;
     grid-template-columns: 1fr;
@@ -750,6 +756,15 @@ main {
     padding: 10px 20px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .most-popular-case-img img {
+    min-width: 125px;
+    max-width: 125px;
+  }
+}
+
+
 
 @media screen and (max-width: 480px) {
   .research-bar {
@@ -775,12 +790,21 @@ main {
     padding-right: 24px;
     width: 100%;
   }
-
+  
   .most-popular-case-img img {
-    min-width: 80px;
+    min-width: 100px;
+    max-width: 100px;
   }
+
 
   .push-to-right {
     margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .most-popular-case-img img {
+    min-width: 80px;
+    max-width: 80px;
   }
 }
