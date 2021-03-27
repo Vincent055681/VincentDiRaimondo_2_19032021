@@ -201,7 +201,7 @@ main {
   color: #0065fc;
   padding: 18px;
   border-radius: 200px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .info .fas {
@@ -289,7 +289,6 @@ main {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-
 
 
 .marseille-case .case-text {
@@ -756,6 +755,12 @@ main {
   .research-bar {
     width: 100%;
   }
+  
+  .filters ul li {
+    padding: 0 12px 0 0;
+    margin-left: 5px;
+  }
+
   .bloc {
     border-radius: 0;
   }
