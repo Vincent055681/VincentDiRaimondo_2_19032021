@@ -721,14 +721,23 @@ main {
     justify-content: flex-end;
     grid-area: navbar-link-sign-up;
   }
+
+  .research-box {
+    position: relative;
+  }
+
   .research-bar {
     width: 300px;
+    height: 49px;
   }
   #button-research {
     display: none;
   }
   #icon-glass {
     display: block;
+    position: absolute;
+    right: -20px;
+    border-radius: 15px;
   }
   .most-popular-case-img img {
     min-width: 145px;
@@ -767,8 +776,8 @@ main {
 
 
 @media screen and (max-width: 480px) {
-  .research-bar {
-    width: 100%;
+  .research-box {
+    width: 80%;
   }
   
   .filters ul li {
