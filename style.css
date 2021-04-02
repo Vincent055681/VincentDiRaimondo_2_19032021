@@ -8,11 +8,13 @@ a {
   color: initial;
 }
 
-main {
+header {
   width: 98%;
   max-width: 1440px;
   margin: auto;
 }
+
+
 
 .navbar {
   display: grid;
@@ -96,6 +98,12 @@ main {
 
 .navbar .active-link {
   color: #0065fc;
+}
+
+main {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .title-h1 {
@@ -289,7 +297,6 @@ main {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-
 
 .marseille-case .case-text {
   margin: 5px;
